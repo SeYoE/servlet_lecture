@@ -12,6 +12,13 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+HELP.md
+servlet.iml
+build/
+gradle/
+.idea/
+.gradle/
+
 # AWS User-specific
 .idea/**/aws.xml
 
