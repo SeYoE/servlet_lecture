@@ -11,7 +11,7 @@ import java.util.Map;
 public class MemberRepository {
 
     // static 이니까 객체가 많아도 필드는 하나만 존재
-    private static Map<Long, Member> store = new HashMap<>();
+    private static final Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
     // 싱글톤
@@ -26,7 +26,7 @@ public class MemberRepository {
     }
 
     public Member save(Member member) {
-        member.setId(++ sequence);
+        member.setId(++sequence);
         store.put(member.getId(), member);
         return member;
     }

@@ -22,17 +22,17 @@ public class MemberFormServlet extends HttpServlet {
 
         PrintWriter writer = response.getWriter();
         writer.write("<!DOCTYPE html>\n" +
-                        "<html>\n" +
-                        "<head>\n" +
-                        "    <meta charset=\"UTF-8\">\n" +
-                        "    <title>Title</title>\n" +
-                        "</head>\n" +
-                        "<body>\n" +
-                        "<form action=\"/servlet/members/save\" method=\"post\">\n" +
-                        "    username: <input type=\"text\" name=\"username\" />\n" +
-                        "    age:      <input type=\"text\" name=\"age\" />\n" +
-                        " <button type=\"submit\">전송</button>\n" + "</form>\n" +
-                        "</body>\n" +
-                        "</html>\n");
+                "<html>\n" +
+                "<head>\n" +
+                "    <meta charset=\"UTF-8\">\n" +
+                "    <title>Title</title>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "<form action=\"/servlet/members/save\" method=\"post\">\n" +
+                "    username: <input type=\"text\" name=\"username\" />\n" +
+                "    age:      <input type=\"text\" name=\"age\" />\n" +
+                " <button type=\"submit\">전송</button>\n" + "</form>\n" +
+                "</body>\n" +
+                "</html>\n");
     }
 }

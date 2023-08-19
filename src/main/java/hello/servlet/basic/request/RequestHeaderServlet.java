@@ -52,8 +52,8 @@ public class RequestHeaderServlet extends HttpServlet {
         }
         */
         request.getHeaderNames().asIterator()
-                        .forEachRemaining(headerName ->
-                                System.out.println(headerName + ": " + request.getHeader(headerName)));
+                .forEachRemaining(headerName ->
+                        System.out.println(headerName + ": " + request.getHeader(headerName)));
         System.out.println("--- Headers - end ---");
         System.out.println();
     }
@@ -91,7 +91,8 @@ public class RequestHeaderServlet extends HttpServlet {
     }
 
     //기타 정보
-    private void printEtc(HttpServletRequest request) { System.out.println("--- 기타 조회 start ---");
+    private void printEtc(HttpServletRequest request) {
+        System.out.println("--- 기타 조회 start ---");
         System.out.println("[Remote 정보]");
         System.out.println("request.getRemoteHost() = " + request.getRemoteHost()); //
         System.out.println("request.getRemoteAddr() = " + request.getRemoteAddr()); //
