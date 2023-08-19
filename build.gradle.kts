@@ -24,6 +24,12 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+
+    //JSP 추가 시작
+    implementation("org.apache.tomcat.embed:tomcat-embed-jasper")
+    implementation("jakarta.servlet:jakarta.servlet-api")
+    implementation("org.glassfish.web:jakarta.servlet.jsp.jstl")
+
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
