@@ -6,7 +6,7 @@ import java.util.Map;
 public class ModelView {
 
     private String viewName;
-    private final Map<String, Object> model;
+    private Map<String, Object> model;
 
     public ModelView(String viewName) {
         this.viewName = viewName;
@@ -17,11 +17,15 @@ public class ModelView {
         return viewName;
     }
 
+    public void setViewName(String viewName) {
+        this.viewName = viewName;
+    }
+
     public Map<String, Object> getModel() {
         return model;
     }
 
-    public void setViewName(String viewName) {
-        this.viewName = viewName;
+    public void setModel(Map<String, Object> model) {
+        this.model = model;
     }
 }
