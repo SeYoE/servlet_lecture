@@ -49,8 +49,8 @@ public class FrontControllerServletV3 extends HttpServlet {
         // 3. ModelView 반환 (Controller 에 대한 논리적 뷰 이름, 모델 포함)
         ModelView modelView = controller.process(paramMap);
 
-        // 4. viewResolver 를 통해 논리적 뷰 이름 전달
-        // 5. viewResolver 가 실제 경로 포함한 MyView 로 반환
+        // 4. viewResolver 를 통해 논리적 뷰 경로 전달
+        // 5. viewResolver 가 실제 물리 경로 포함한 MyView 로 반환
         String viewName = modelView.getViewName();
         MyView view = viewResolver(viewName);
 
